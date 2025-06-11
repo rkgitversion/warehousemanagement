@@ -28,7 +28,7 @@ Feature: This feature file verify the login functionality
     When user click on login button
     Then verify the login error message for empty credential
 
-  @datadriven @smoke  @HBP-4322
+  @datadriven @smoke  @HBP-4322 @loginmultiple
   Scenario Outline: verify Login functionality with multiple login credentials
     When user enter the email address "<username>"
     And user enter password "<password>"

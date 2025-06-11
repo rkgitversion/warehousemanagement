@@ -16,6 +16,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginStepDefinition {
+
     private TestContext testContext;
     private HomePage homePage;
     private LoginPage loginPage;
@@ -146,4 +147,5 @@ public class LoginStepDefinition {
         password = (password == null) ? "" : password;
         loginPage.enterPassword(password);
     }
+
 }

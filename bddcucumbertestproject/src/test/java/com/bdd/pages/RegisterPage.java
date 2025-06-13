@@ -22,7 +22,6 @@ public class RegisterPage {
 
     @FindBy(xpath = "/h2")
     public WebElement createAccounth2;
-
     @FindBy(id = "firstName")
     public WebElement firstNameTxtBox;
     @FindBy(id = "lastName")

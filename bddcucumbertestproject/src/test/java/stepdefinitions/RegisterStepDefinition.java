@@ -11,11 +11,11 @@ import org.testng.Assert;
 
 public class RegisterStepDefinition {
 
-    private TestContext testContext;
-  private HomePage homePage;
-  private RegisterPage registerPage;
-  private DashBoardPage dashBoardPage;
-  private LoginPage loginPage;
+      private TestContext testContext;
+      private HomePage homePage;
+      private RegisterPage registerPage;
+      private DashBoardPage dashBoardPage;
+      private LoginPage loginPage;
 
     public RegisterStepDefinition(TestContext context) {
         this.testContext = context;

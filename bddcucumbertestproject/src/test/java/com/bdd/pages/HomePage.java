@@ -16,6 +16,7 @@ public class HomePage {
 	public String getTitle(){
 		return driver.getTitle();
 	}
+
 	@FindBy(linkText = "Log in")
 	private WebElement loginLink;
 	@FindBy(linkText = "Register")

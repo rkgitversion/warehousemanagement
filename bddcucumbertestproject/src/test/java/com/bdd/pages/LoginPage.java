@@ -14,6 +14,9 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 
+	public String getTitle(){
+		return driver.getTitle();
+	}
 	// indentify the webelement locators
 	@FindBy(id = "Email")
 	public WebElement emailtxt;

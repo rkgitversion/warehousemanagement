@@ -45,9 +45,7 @@ public class Hooks {
     	        byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
     	        scenario.attach(screenshot, "image/png", scenario.getName());
     	    }
-            testContext.getDriver().close();
+            testContext.getDriver().quit();
 
-//         Close the browser after each test
-//        testContext.getDriver().quit();
     }
 }

@@ -13,21 +13,18 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features = "src/test/resources/features",          // Path to feature files
     glue = {"stepdefinitions"},                          // Package name where step definitions are present
-    tags = "@regression", 
+    tags = "@WMSY-T2",
     plugin = {
         "pretty",                                      // Pretty console output
-        "json:target/cucumber.json"                   // JSON Report
+        "json:target/cucumber.json"   ,
+            "html:target/cucumber-reports/cucumber-pretty",
+            "json:target/cucumber-reports/CucumberTestReport.json",
+            "junit:target/cucumber-reports/CucumberTestReport.xml"
        
     },
     monochrome = true,                                 // Clean console output
-    dryRun = false                                  // Validate steps without executing if true
+    dryRun = true                                  // Validate steps without executing if true
 		)
-public class TestRunner extends AbstractTestNGCucumberTests {
-
-    @Override
-    @DataProvider(parallel = true)
-    public Object[][] scenarios() {
-        return super.scenarios();
-    }
+public class TestRunner {
    
 }

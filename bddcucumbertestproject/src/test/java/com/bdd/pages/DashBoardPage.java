@@ -14,7 +14,7 @@ public class DashBoardPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(className = "ico-logout")
+	@FindBy(className = "logout-btn")
 	public WebElement logoutLink;
 	
 	public void clickLogoutLink() {

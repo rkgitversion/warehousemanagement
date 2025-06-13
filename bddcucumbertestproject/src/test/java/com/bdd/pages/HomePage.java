@@ -13,6 +13,10 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	public String getTitle(){
+		return driver.getTitle();
+	}
+
 	@FindBy(linkText = "Log in")
 	private WebElement loginLink;
 	@FindBy(linkText = "Register")
